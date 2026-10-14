@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow | My Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">MY PRODUCTIVITY SPACE</p>
+    <h1>TaskFlow<span>.</span></h1>
+    <p class="subtitle">Small steps. Great progress.</p>
+
+    <form id="task-form">
+      <input id="task-input" type="text"
+        placeholder="What needs to be done?"
+        aria-label="New task" maxlength="150" required>
+      <button type="submit">Add task +</button>
+    </form>
+
+    <div class="summary">
+      <span id="task-count">0 tasks</span>
+      <button id="clear-completed" class="text-button" type="button">
+        Clear completed
+      </button>
+    </div>
+
+    <ul id="task-list" aria-live="polite"></ul>
+    <p id="empty-state">Your task list is empty. Add your first task!</p>
+    <p class="footer-note">Made with focus by Javerya Tabasum</p>
+  </main>
+</body>
+</html>
